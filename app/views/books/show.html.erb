@@ -1,2 +1,17 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<!DOCTYPE html>
+<html>
+  <html>
+  <head>
+    <link rel="stylesheet" href"books.scss"/>
+  </head>
+  <body>
+    <p id="notice">Book was successfully created.</p>
+    <p><storong>Title:</storong></p>
+    <p><%= @book.body %></p>
+    <p><storong>Body:</storong></p>
+    <p><%= @book.body %></p>
+    <a class="edit" href="">Edit</a>
+    |
+    <a class="back" href="/books">Back</a>
+  </body>
+</html>
