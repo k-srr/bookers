@@ -21,13 +21,16 @@
           <td><%= book.title %></td>
           <td><%= book.body %></td>
           <td>
-            <a class="show" href="/book">Show</a>
-          </td>
+            <span>
+              <%= link_to('Show', book_path(book.id)) %>
+            </span>
           <td>
-            <a>Edit</a>
+            <span>
+              <%= link_to('Edit', edit_book_path(book.id)) %>
+            </span>
           </td>
           <th>
-            <a data-confirm="Are you sure?" >Destroy</a>
+            <%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "Are you sure?？" %>
           </th>
         </tr>
       </tbody>

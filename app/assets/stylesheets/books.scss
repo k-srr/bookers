@@ -87,7 +87,7 @@ form{
   display:block;
 }
 
-div.field{
+div.field, .actions{
   margin-bottom:10px;
 }
 
@@ -97,9 +97,13 @@ label{
 }
 
 input{
-  
+
 }
 
 textarea{
+  padding:2px;
+}
+
+a{
   padding:2px;
 }
